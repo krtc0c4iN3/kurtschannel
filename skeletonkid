@@ -1,0 +1,15 @@
+// Building the Channel
+messagingClient.createChannel({
+    uniqueName: 'general',
+    friendlyName: 'THE KRT CHANNEL'
+}).then(function(channel) {
+    console.log('Created general channel:');
+    console.log(channel);
+});
+
+// Join THE KRT CHANNEL
+myChannel.join().then(function(channel) {
+    console.log('Joined channel ' + channel.friendlyName) 
+});
+
+
